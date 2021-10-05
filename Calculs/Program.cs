@@ -9,8 +9,11 @@ namespace Calculs
 {
     class Program
     {
-        static void Main(string[] args)
+ 
+        static void Main(string[] args) 
         {
+            
+         
             // variables 
             Random rand = new Random(); // outil de génération de nombre aléatoire
             int val1, val2; // mémorisation de nombres aléatoires
@@ -19,10 +22,16 @@ namespace Calculs
             string choix; // saisie du choix de l'utilsiateur
             bool correct; // mémorise si la saisie est un entier
 
+            // Création de fonction pour eviter les repetitions de code
+             
+            
             // boucle sur le menu
             choix = "1";
             while (choix != "0")
             {
+                // Création des 2 nombres aléatoires
+                val1 = rand.Next(1, 10);
+                val2 = rand.Next(1, 10);
                 // affiche le menu et saisi le choix
                 Console.WriteLine("Addition ....................... 1");
                 Console.WriteLine("Multiplication ................. 2");
@@ -33,8 +42,7 @@ namespace Calculs
                 switch (choix)
                 {
                     case "1": // addition
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+                        
                         // saisie de la réponse
                         correct = false;
                         while (!correct)
@@ -62,8 +70,7 @@ namespace Calculs
                         }
                         break;
                     case "2": // multiplication
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+                        
                         // saisie de la réponse
                         correct = false;
                         while (!correct)
