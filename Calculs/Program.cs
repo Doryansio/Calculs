@@ -59,6 +59,7 @@ namespace Calculs
                             }
                         }
                         // comparaison avec la réponse
+                        15464688
                         solution = val1 + val2;
                         if (reponse == solution)
                         {
